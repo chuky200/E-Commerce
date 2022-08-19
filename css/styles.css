@@ -17,7 +17,7 @@ nav a {
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
-  -moz-user-select: none;
+  -moz-user-select: none;                                   
   -ms-user-select: none;
   user-select: none;
 }
@@ -58,6 +58,7 @@ nav a {
 
 .jumbotron .container {
   max-width: 40rem;
+  
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   text-shadow: 1px 1px 2px grey;
@@ -188,3 +189,114 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+/* AGREGADO POR MI */
+
+
+#cards{
+  margin: 0 10%;
+  position: relative;
+}
+
+/* PAGINA LOGIN */
+
+
+.titulo{
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  transform: translate(0, -10px);
+  font-size: 200%;
+  font-weight: 600;
+}
+
+.fotoLogin{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  height: 160px;
+  min-width: 100px;
+  margin-bottom: 0;
+  transform: translate(0, -40px);
+  border-radius: 15px;
+  border: 1.5px solid #4d4d4d;
+}
+.formulario{
+  width: 40%;
+  margin: 0 auto;
+  
+  
+  
+}
+
+
+.btn{
+  border-radius: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 45px;
+  font-size: 19px;
+  font-weight: 550;
+  transform: translate(0, -10px);
+  
+}
+
+
+
+.form-label{
+  
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-align: center;
+
+  
+}
+.form-check-label{
+  font-size: 15px;
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: black;
+  margin-left: 5px;
+}
+
+.form-control{
+  border-radius: 20px;
+  border: 2px solid #2b3030;
+  width: 100%;
+  display: block;
+
+  
+}
+
+
+/* #alert-danger{
+  background: none;
+  color: red;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  transform: translate(0, -14px);
+  
+ 
+  
+}
+#alert-danger2{
+  background: none;
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+
+}
+*/
+input[type='checkbox']{
+    border: 1.5px solid black;
+    
+
+}
+

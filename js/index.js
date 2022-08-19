@@ -1,3 +1,13 @@
+const indexBtn = document.querySelector('#indexBtn');
+indexBtn.addEventListener('click', function(){
+    window.location.href = './login.html';
+});
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("autos").addEventListener("click", function() {
         localStorage.setItem("catID", 101);
