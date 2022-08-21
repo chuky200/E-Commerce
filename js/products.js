@@ -15,11 +15,11 @@ fetch(URL)
             i++;
         
             cards.innerHTML +=`<div class="card " style="width: 17rem;">
-            <img id="imagen${i}" src="${product.image}"class="card-img-top" alt="Card image cap">
+            <img src="${product.image}"class="card-img-top" alt="Card image cap">
             <div class="card-body">
-              <h5 id="titulo${i}"class="card-title">${product.name} - ${product.cost}</h5>
-              <p id="descripcion${i}"class="card-text">${product.description}</p>
-              <p class="card-text"><small id="small${i}" >${product.soldCount} unidades disponibles</small></p>
+              <h5 class="card-title">${product.name} - ${product.cost}</h5>
+              <p class="card-text">${product.description}</p>
+              <p class="card-text"><small>${product.soldCount} unidades disponibles</small></p>
             </div>  
           </div>`
           }
