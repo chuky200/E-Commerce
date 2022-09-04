@@ -191,16 +191,120 @@ a.custom-card:hover {
 }
 
 /* AGREGADO POR MI */
-
-
+/* INDEX */
+.usuario{
+  color:white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  
+  
+}
+.usuario:hover{
+  background-color: rgb(54, 54, 50);
+}
 #cards{
   margin: 0 10%;
   position: relative;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  cursor: pointer;;
+ 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.nav-item{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mucho-mas{
+  
+}
+
+/* PRODUCTS */
+.filter-bar1{
+  width: 400px;
+margin-left: 10%;
+  transform: translate(0,110px);
+  margin-bottom: 4px;
+  
+}
+.filter-bar1 button{
+  border-radius: 10px;
+}
+.filter-bar1 label{
+  color: black;
+  font-weight: 700;
+  float: left;
+  font-size:25px;
+  text-decoration: underline;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.filter-bar1 input{
+  border-radius: 10px;
+  border: 2px solid rgb(10, 10, 82);
+  height: 35px;
+  width: 90%;
+  margin-left: 0;
+  
+}
+
+.filter-bar2{
+  width: 600px;
+  margin-left: 48%;
+
+  transform: translate(0,40px);
+  display: block;
+  
+}
+.filter-bar2 button{
+  margin-bottom: ;
+  border-radius: 20px;
+  border: 2px solid rgb(10, 10, 82);
+  font-weight: 700;
+}
+
+.filter-bar2 input{
+  border-radius: 15px;
+  border: 2px solid rgb(10, 10, 82);
+  height: 35px;
+}
+
+.botones-filtros{
+  height: 0px;
+  
+  margin-bottom: 7px;
+  
+  
+ 
+}
+.botones-filtros2{
+  margin: 0;
+}
+
+
 
 /* PAGINA LOGIN */
-
-
 .titulo{
   text-align: center;
   color: #ffffff;
@@ -263,6 +367,10 @@ a.custom-card:hover {
   color: black;
   margin-left: 5px;
 }
+.form-check-label:hover{
+  color:white;
+  cursor:pointer;
+}
 
 .form-control{
   border-radius: 20px;
@@ -272,6 +380,7 @@ a.custom-card:hover {
 
   
 }
+
 
 
 /* #alert-danger{
@@ -296,7 +405,48 @@ a.custom-card:hover {
 */
 input[type='checkbox']{
     border: 1.5px solid black;
-    
-
+}
+/* BOTON INICIO DE SESION */
+.button-15 {
+  background-image: linear-gradient(#42A1EC, #0070C9);
+  border: 1px solid #0077CC;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.button-15:disabled {
+  cursor: default;
+  opacity: .3;
+}
+.button-15:hover {
+  background-image: linear-gradient(#51A9EE, #147BCD);
+  border-color: #1482D0;
+  text-decoration: none;
+}
+.button-15:active {
+  background-image: linear-gradient(#3D94D9, #0067B9);
+  border-color: #006DBC;
+  outline: none;
+}
+.button-15:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
 }
 

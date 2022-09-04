@@ -10,6 +10,8 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <style>
     .card{
       margin: 20px;
@@ -29,6 +31,7 @@
   h2{
     font-weight: 700;
     color: white;
+    
   }
   .lead{
     font-weight: 400;
@@ -73,7 +76,8 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="showUser">
+            
           </li>
         </ul>
       </div>
@@ -81,24 +85,45 @@
   </nav>
   <!--FIN DEL NAVEGADOR-->
 
+
   <main class="pb-5">
     <div class="text-center p-4">
       <h2>Productos</h2>
-      <p id="lead" class="lead">Verás aquí todos los productos de la cagetoría</p>
+      <p id="lead" class="lead"></p>
+    
+           <!-- FILTER BAR -->
+      <div class="filter-bar1">
+      <label for="sortByName" class="sortByNameLabel">Búsqueda</label>
+      <input type="text" id="sortByName"placeholder=" Nombre del producto">  
+      <button class="btn-dark"id="sortByNameBtn"><i class='fa fa-search'></i></button>
+    
+
     </div>
+     <div class="filter-bar2"> 
+      <div class="botones-filtros">
+      
+        <button id="sortAsc">A-Z</button>
+      <button id="sortDesc">Z-A</button>
+      <button><i class='fas fa-sort-amount-up'id="filtroAsc"></i>$</button>
+      <button><i class='fas fa-sort-amount-down' id="filtroDesc"></i>$</button>
+      <button><i class='fa fa-bar-chart' id="filtroRel"></i>Vendidos</button>
+      </div>
+     <br>
+      <input type="text" id="precioMin" placeholder=" Precio min."> 
+      <input type="text" id="precioMax" placeholder=" Precio máx.">
+      <button id="btnFiltro">Filtrar</button>
+      <button id="limpiarFiltro">Limpiar</button>
+     </div>
+    </div>
+
   
-    <!--Le asigne un id al row donde se agregarán las cards -->
+
     <div class="contenedor">
     <div class="row g-0" id="cards">
 
     </div>
     </div>
-
-   
-
-  
-  
-                      	<!--FOOTER-->
+              	<!--FOOTER-->
     <footer class="text-muted">
       <div class="container">
         <p class="float-end">
@@ -122,6 +147,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/products.js"></script>
+    
 </body>
 
 </html>
