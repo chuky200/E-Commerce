@@ -98,14 +98,14 @@ function showAlerts(){
 
 
 function showStars(cantidad){
-    let stars = "";
+    let starsHTML = "";
     for(i=0;i<cantidad;i++){
-        stars += `<span class="fa fa-star checked"></span>`;
+        starsHTML += `<span class="fa fa-star checked"></span>`;
     }
     for(i=cantidad; i < 5;i++){
-        stars += `</span> <span class="fa fa-star"></span>`;
+        starsHTML += `</span> <span class="fa fa-star"></span>`;
     }
-    return stars
+    return starsHTML
 }   
 
 
