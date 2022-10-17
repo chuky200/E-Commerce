@@ -4,11 +4,11 @@ const email = document.getElementById('inputEmail');
 btn.addEventListener('click', function() {
     if(verificarPass() && verificarEmail() && verificarTerminos()){
        localStorage.setItem('user', email.value.split("@")[0]);
-       console.log(localStorage.getItem('user').indexOf('@'));
+      
        window.location.href ='./index.html';
     }
     else if(verificarPass() && verificarEmail()){
-        sessionStorage.setItem('user', email.value);
+        sessionStorage.setItem('user', email.value.split('@')[0]);
         window.location.href ='./index.html';
     }
     else if(!verificarPass() && !verificarEmail()){
@@ -68,15 +68,3 @@ function verificarPass(){
     else{
         return true;
     }}
-function onSignIn(googleUser) {
-var profile = googleUser.getBasicProfile();
-console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-console.log('Name: ' + profile.getName());
-console.log('Image URL: ' + profile.getImageUrl());
-console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
-googleBtn.addEventListener('click', function(){
-    setTimeout(function(){
-        window.location.href ='./index.html';
-    }, 7000);   
-    });
